@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+body, html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Sniglet', cursive;
+}
+header{
+  height: 100px;
+  background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#fish{
+  height: 100%; 
+  background-color: #98d4f3;
+  overflow: hidden;
+  position: relative;
+}
+h1{
+  font-weight: normal;
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 500px;
+  color: #F90;
+  text-align: center;
+
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 10px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding:20px;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.pre{
+	background-color: #636363;
+	color:white;
+}
+.deux{
+	background-color: #131313;
+	color:white;
+}
+.trois{
+	background-color: #FFFFFF;
+	color:black;
+}
+footer{
+	padding:30px;
+}
