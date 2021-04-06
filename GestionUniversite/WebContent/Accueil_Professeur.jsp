@@ -36,13 +36,13 @@
 	<tbody>
 		<c:forEach var="note" items= "${professeur.notes}">
 		<tr class="active-row">
-			<td>
+			<td class="pre">
 				<c:out value="${note.nom}"></c:out>
 			</td>
-			<td>
+			<td class="deux">
 				<c:out value="${note.prenom}"></c:out>
 			</td>
-			<td>
+			<td class="trois">
 				<c:out value="${note.valeur}"></c:out>
 			</td>
 		</tr>
@@ -50,6 +50,6 @@
 	</tbody>
 	</table>
 	</section>
-	<footer>© 2021<fmt:message key="login.lang" /></footer>
+	<footer>© 2021 <fmt:message key="login.lang" /></footer>
 </body>
 </html>
