@@ -47,6 +47,6 @@
 	</tbody>
 	</table>
 	</section>
-	<footer>© 2021 <fmt:message key="login.lang" /></footer>
+	<footer>© 2021 <fmt:message key="login.lang" />  <br> <a href="Convertisseur.jsp"><fmt:message key="conv.msg" /></a></footer>
 </body>
 </html>

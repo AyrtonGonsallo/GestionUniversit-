@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<c:set var = "now" value = "<%=new java.util.Date()%>" />
 <c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}" scope="session" />
  <fmt:setLocale value="${language}" />
  <fmt:setBundle basename="com.i18n.text" />
@@ -26,7 +27,7 @@
 	</section>
 	<c:set var="i" value="0"></c:set>
 	<table>
-		<c:forEach begin="0" end="10" varStatus="loop">
+		<c:forEach begin="0" end="20" varStatus="loop">
 		<td id="cadre"><c:out value="${i}"></c:out></td>
 		<c:set var="i" value="${i+1}"></c:set>
 		</c:forEach>
@@ -45,6 +46,6 @@
             no language sir ...
          </c:otherwise>
       </c:choose>
-	<footer>© 2021 <fmt:message key="login.lang" /> <c:out value="${language}"></c:out></footer>
+	<footer>© 2021 <fmt:message key="login.lang" /> <div><fmt:message key="login.time" /> <fmt:formatDate value="${now}" type="time"/></div></footer>
 </body>
 </html>
